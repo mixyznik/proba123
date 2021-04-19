@@ -4,7 +4,7 @@ pipeline {
         stage('Develop branch deploy to mixyznik.club') {
             agent { label 'remote-node-new' }
             when {
-                expression { env.GIT_BRANCH == 'develop' }
+                expression { env.GIT_BRANCH == 'dev' }
             }
             steps {
                     echo "deploy to mixyznik.club started"
