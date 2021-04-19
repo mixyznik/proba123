@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'java -version'
-                sh 'node -version'
+                sh 'javac -version'
             }
         }
     }
