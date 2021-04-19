@@ -15,7 +15,7 @@ pipeline {
         stage('Master branch deploy to master') {
             agent { label 'master'}
             when {
-                 expression { env.GIT_BRANCH == 'master' }
+                 branch "master"
             }
             steps {
                     echo "deploy to master started"
