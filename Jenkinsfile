@@ -11,6 +11,7 @@ pipeline {
                     sh 'printenv'
                     sh 'pwd'
             }
+        }
         stage('Master branch deploy to master') {
             agent { label 'master'}
             when {
@@ -24,4 +25,3 @@ pipeline {
         }
     }
     }
-}
